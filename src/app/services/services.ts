@@ -12,7 +12,6 @@ export class Service {
         private http: HttpClient
 
     ) { }
-
     public addUser(mail:any,pass:any) {
         const params = {mail:mail,pass:pass};
         const config = new HttpHeaders()
