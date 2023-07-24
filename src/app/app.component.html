@@ -1,2 +1,19 @@
-<!-- <div class="cabecera"><h2>Prueba Tecnica Magic Log</h2></div> -->
+<div class="cabecera">
+<div class="row">
+    <div class="item">Magic Log MarketPlace</div>
+    
+    <div class="item"><a routerLink="/login">Iniciar sesión</a></div>
+</div>
+<div class="barralateral">
+    <div class="lateral">
+        <div class="itemlat"><a routerLink="">Dashboard</a></div>
+        <div class="itemlat"  (click)="verificar('product')">Cotizaciones</div>
+        <div class="itemlat" (click)="verificar('product')">Ordenes</div>
+        <div class="itemlat"  (click)="verificar('productlist')">Inventario</div>
+    </div>
+</div>
+
+</div>
+
+
 <router-outlet></router-outlet>

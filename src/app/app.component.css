@@ -1,4 +1,55 @@
-  
+.cabecera{
+
+        height: 5vh !important;
+            width: 100rem;
+            background-color: rgb(209, 211, 211);
+}
+.row {
+    display: flex;
+    /* Crea un contenedor flexible */
+    justify-content: space-between;
+    /* Distribuye los elementos con espacio entre ellos */
+}
+.center{
+    flex-direction: column;
+        /* Organiza los elementos en una columna */
+        align-items: center;
+        
+}
+.itemc {
+    padding: 10px;
+    
+    margin: 5px;
+    width: 400px;
+    /* Ancho opcional para demostración */
+}
+.barralateral{
+    background-color: rgb(240, 240, 240);
+    height: 95vh !important;
+        width: 15rem;
+    margin-top: 0.5vh;
+    border: #5d5c5c;
+}
+.lateral{
+    flex-direction: column;
+        /* Organiza los elementos en una columna */
+        align-items: start;
+}
+.itemlat{
+padding: 10px;
+background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+.item {
+    padding: 10px;
+    /* background-color: #f0f0f0;
+    border: 1px solid #ccc; */
+}
+.item2 {
+    padding: 10px;
+     background-color: #f0f0f0;
+    border: 1px solid #ccc; 
+}
 .mar{
 margin-top: 40px;
 }
@@ -9,6 +60,25 @@ margin-top: 40px;
           width: 400px;
           text-align: center;
           margin-left: 40%;
+          margin-top: 10%;
+      }
+  }
+  @media (min-width: 308px) {
+      .navbar {
+
+          height: 10vh !important;
+          width: 1000px;
+          text-align: center;
+         
+      }
+  }
+  @media (min-width: 308px) {
+      .gradient-form-prod {
+
+          height: 60vh !important;
+          width: 1000px;
+          text-align: center;
+          margin-left: 20%;
           margin-top: 10%;
       }
   }

@@ -1,0 +1,38 @@
+<section class=" gradient-form" style="background-color: #e5f6f5;">
+    <div class="card-body p-md-5 mx-md-4 mar">
+
+        <div class="text-center mar">
+
+            <h2 class="mt-1 mb-5 pb-1">Iniciar sesión</h2>
+        </div>
+        <form  class="center">
+            <div class="form-outline mb- itemc">
+                <label class="form-label" >Correo</label>
+                <br>
+             
+                <input  type="email"  [(ngModel)]="mail"  name="mail" class="form-control" placeholder="ejemplo@correo.com" />
+
+            </div>
+
+            <br>
+            <div class="form-outline itemc">
+                <label class="form-label" for="form2Example22">Contraseña</label>
+                <br>
+
+                <input  type="password"  [(ngModel)]="pass" name="pass" class="form-control" />
+
+            </div>
+            <br>
+            <br>
+         
+            <br>
+
+            <div class="d-flex align-items-center justify-content-center pb-4 itemc">
+
+                <button type="button" class="btn btn-outline-danger" (click)="getUser()">Entrar</button>
+            </div>
+
+        </form>
+    </div>
+
+</section>

@@ -1,0 +1,54 @@
+<section class=" gradient-form" style="background-color: #e5f6f5;">
+    <div class="card-body p-md-5 mx-md-4 mar">
+
+        <div class="text-center mar">
+
+            <h2 class="mt-1 mb-5 pb-1">Crear producto</h2>
+        </div>
+        <form class="center">
+            <div class="form-outline mb- itemc">
+                <label class="form-label" for="form2Example11">nombre</label>
+                <br>
+
+                <input type="input" [(ngModel)]="nombre" name="nombre" class="form-control"  />
+
+            </div>
+
+            <br>
+            <div class="form-outline itemc">
+                <label class="form-label" >sku</label>
+                <br>
+
+                <input type="input" [(ngModel)]="sku" name="sku" class="form-control" />
+
+            </div>
+            <br>
+            <div class="form-outline itemc">
+                <label class="form-label" >precio</label>
+                <br>
+            
+                <input type="input" [(ngModel)]="precio" name="precio" class="form-control" />
+            
+            </div>
+            <br>
+            <div class="form-outline itemc">
+                <label class="form-label" >cantidad</label>
+                <br>
+            
+                <input type="input" [(ngModel)]="cantidad" name="cantidad" class="form-control" />
+            
+            </div>
+            <br>
+            <br>
+
+            <br>
+
+            <div class="d-flex align-items-center justify-content-center pb-4 itemc">
+
+                <button type="button" class="btn btn-outline-danger" (click)="addproduct()">Entrar</button>
+            </div>
+
+        </form>
+    </div>
+
+</section>
