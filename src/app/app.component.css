@@ -1,0 +1,21 @@
+  
+.mar{
+margin-top: 40px;
+}
+  @media (min-width: 308px) {
+      .gradient-form {
+
+          height: 60vh !important;
+          width: 400px;
+          text-align: center;
+          margin-left: 40%;
+          margin-top: 10%;
+      }
+  }
+
+  @media (min-width: 369px) {
+      .gradient-custom-2 {
+          border-top-right-radius: .3rem;
+          border-bottom-right-radius: .3rem;
+      }
+  }
