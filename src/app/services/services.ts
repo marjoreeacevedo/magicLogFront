@@ -17,8 +17,9 @@ export class Service {
         const config = new HttpHeaders()
             .set('Content-Type', 'application/json')
             .set('Accept', 'application/json');
-
-        return this.http.post('http://34.133.145.42/api/register', { params,config });
+            console.log(params);
+        return this.http.post('http://34.133.145.42/api/register', { mail,pass,config }); 
+        
 
     }
 
@@ -27,19 +28,19 @@ export class Service {
         const config = new HttpHeaders()
             .set('Content-Type', 'application/json')
             .set('Accept', 'application/json');
-            console.log(params);
+        
 
         return this.http.post('http://34.133.145.42/api/getuser', { params, config });
 
     }
 
     public addproduct(nombre:any, sku:any, precio:any, cantidad:any, vendedor:any) {
-        const params = { nombre:nombre, sku:sku, precio:precio, cantidad:cantidad, vendedor:vendedor };
+        // const params = { nombre:nombre, sku:sku, precio:precio, cantidad:cantidad, vendedor:vendedor };
         const config = new HttpHeaders()
             .set('Content-Type', 'application/json')
             .set('Accept', 'application/json');
 
-        return this.http.post('http://34.133.145.42/api/addproduct', { params, config });
+        return this.http.post('http://34.133.145.42/api/addproduct', {nombre,sku,precio,cantidad,vendedor, config });
 
     }
     public getproductseller(vendedor:any) {
@@ -48,7 +49,7 @@ export class Service {
             .set('Content-Type', 'application/json')
             .set('Accept', 'application/json');
 
-        return this.http.post('http://34.133.145.42/api/getproductseller', { params, config });
+        return this.http.post('http://34.133.145.42/api/getproductseller', {vendedor, config });
 
     }
     public getproduct() {
@@ -66,7 +67,7 @@ export class Service {
             .set('Content-Type', 'application/json')
             .set('Accept', 'application/json');
 
-        return this.http.post('http://34.133.145.42/api/findproduct', { params, config });
+        return this.http.post('http://34.133.145.42/api/findproduct', { filtro, config });
 
     }
     public findproductRange(filtro: any) {
@@ -75,7 +76,7 @@ export class Service {
             .set('Content-Type', 'application/json')
             .set('Accept', 'application/json');
 
-        return this.http.post('http://34.133.145.42/api/findproductRange', { params, config });
+        return this.http.post('http://34.133.145.42/api/findproductRange', { filtro, config });
 
     }
 
