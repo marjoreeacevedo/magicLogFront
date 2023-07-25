@@ -30,7 +30,7 @@ export class Service {
             .set('Accept', 'application/json');
         
 
-        return this.http.post('http://34.133.145.42/api/getuser', { params, config });
+        return this.http.post('http://34.133.145.42/api/getuser', { mail,pass, config });
 
     }
 
